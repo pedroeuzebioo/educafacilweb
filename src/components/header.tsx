@@ -101,10 +101,17 @@ const Header = () => {
               </Link>
             </SheetClose>
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <SmilePlus size={16} />
-              Extras
-            </Button>
+            <SheetClose asChild>
+              <Link href="/extras">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <SmilePlus size={16} />
+                  Extras
+                </Button>
+              </Link>
+            </SheetClose>
 
             <Button variant="outline" className="w-full justify-start gap-2">
               <Contact size={16} />

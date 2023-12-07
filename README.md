@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EducaFacilWeb
 
-## Getting Started
+<img src="./.github/apresentation.png" alt="Imagem de apresentação" width="100%">
 
-First, run the development server:
+> Um site educacional para apoiar alunos em seus estudos. Desfrute de vídeos de diferentes disciplinas e melhore seu desempenho acadêmico.
+
+## 🔧 Tecnologias utilizadas
+
+- React
+- Next.js
+- Tailwind CSS
+- Shadcn UI
+
+## Funcionalidades
+
+- [x] Modo Escuro/Claro
+- [x] Videos aulas de disciplinas chaves junto com materiais extras gratuitamente
+
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+- Você tem uma máquina `<Windows / Linux / Mac>`.
+- Você tem o Node.js instalado em sua máquina.
+
+## 🚀 Instalando EducaFacilWeb
+
+Para instalar o EducaFacilWeb, siga estas etapas:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# clone o repositório
+$ git clone git@github.com:eupedrohenrique/educafacilweb.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ☕ Usando EducaFacilWeb
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para usar EducaFAcilWeb, siga estas etapas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+# Entre na pasta do projeto
+$ cd educafacilweb
 
-## Learn More
+# Instale as dependências
+$ npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Execute o projeto
+$ npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- O projeto estará sendo executado em http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📫 Contribuindo para EducaFacilWeb
 
-## Deploy on Vercel
+Para contribuir com EducaFacilWeb, siga estas etapas:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Crie a solicitação de pull.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## 😄 Seja um dos contribuidores
+
+Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
+
+## 🎯 Status do projeto
+
+O projeto está concluído.
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.

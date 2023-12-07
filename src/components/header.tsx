@@ -77,10 +77,17 @@ const Header = () => {
               </Link>
             </SheetClose>
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <Pi size={16} />
-              Matemática
-            </Button>
+            <SheetClose asChild>
+              <Link href="/matematica">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <Pi size={16} />
+                  Matemática
+                </Button>
+              </Link>
+            </SheetClose>
 
             <Button variant="outline" className="w-full justify-start gap-2">
               <BookOpenText size={16} />

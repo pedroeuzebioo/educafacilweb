@@ -113,10 +113,17 @@ const Header = () => {
               </Link>
             </SheetClose>
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <Contact size={16} />
-              Feedback
-            </Button>
+            <SheetClose asChild>
+              <Link href="https://forms.gle/CMXu4tCY1xsfTArH6">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <Contact size={16} />
+                  Feedback
+                </Button>
+              </Link>
+            </SheetClose>
           </div>
         </SheetContent>
       </Sheet>

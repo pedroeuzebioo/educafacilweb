@@ -10,9 +10,16 @@ import {
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { ModeToggle } from "./mode-toggle";
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from "./ui/sheet";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -46,15 +53,29 @@ const Header = () => {
           </div>
 
           <div className="mt-2 flex flex-col gap-3">
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <HomeIcon size={16} />
-              Início
-            </Button>
+            <SheetClose asChild>
+              <Link href="/">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <HomeIcon size={16} />
+                  Início
+                </Button>
+              </Link>
+            </SheetClose>
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <Microscope size={16} />
-              Biologia
-            </Button>
+            <SheetClose asChild>
+              <Link href="/biologia">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <Microscope size={16} />
+                  Biologia
+                </Button>
+              </Link>
+            </SheetClose>
 
             <Button variant="outline" className="w-full justify-start gap-2">
               <Pi size={16} />
@@ -79,9 +100,11 @@ const Header = () => {
         </SheetContent>
       </Sheet>
 
-      <h1 className="text-lg font-semibold text-primary md:text-2xl">
-        EducaFacilWeb
-      </h1>
+      <Link href="/">
+        <h1 className="text-lg font-semibold text-primary md:text-2xl">
+          EducaFacilWeb
+        </h1>
+      </Link>
 
       <ModeToggle />
     </Card>

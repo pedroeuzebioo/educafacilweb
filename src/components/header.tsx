@@ -89,10 +89,17 @@ const Header = () => {
               </Link>
             </SheetClose>
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <BookOpenText size={16} />
-              Redação
-            </Button>
+            <SheetClose asChild>
+              <Link href="/redacao">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <BookOpenText size={16} />
+                  Redação
+                </Button>
+              </Link>
+            </SheetClose>
 
             <Button variant="outline" className="w-full justify-start gap-2">
               <SmilePlus size={16} />
@@ -108,9 +115,7 @@ const Header = () => {
       </Sheet>
 
       <Link href="/">
-        <h1 className="text-lg font-semibold text-primary md:text-2xl">
-          EducaFacilWeb
-        </h1>
+        <h1 className="text-3xl font-semibold text-primary">EducaFacilWeb</h1>
       </Link>
 
       <ModeToggle />

@@ -3,7 +3,7 @@ import VideoSection from "./components/video-section";
 
 const MatematicaRoute = () => {
   return (
-    <>
+    <main className="flex-1">
       <VideoSection
         title="Aula de Logaritmos e PA"
         videoUrl="https://www.youtube.com/embed/_PfXFeuqN2o?si=ZLBefi21T91RVLnC"
@@ -54,7 +54,7 @@ const MatematicaRoute = () => {
           </Link>
         </p>
       </section>
-    </>
+    </main>
   );
 };
 

@@ -3,6 +3,7 @@ import {
   Contact,
   HomeIcon,
   MenuIcon,
+  Microscope,
   Pi,
   SmilePlus,
 } from "lucide-react";
@@ -60,6 +61,18 @@ const Header = () => {
                 >
                   <HomeIcon size={16} />
                   Início
+                </Button>
+              </Link>
+            </SheetClose>
+
+            <SheetClose asChild>
+              <Link href="/biologia">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <Microscope size={16} />
+                  Biologia
                 </Button>
               </Link>
             </SheetClose>
